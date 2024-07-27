@@ -8,7 +8,6 @@ class MyGame(Scene):
   def setup(self):
     self.state_manager = GameStateManager()
     self.state_manager.register_state('loading', LoadingState())
-
     self.state_manager.switch_state('loading')
 
   def update(self):
